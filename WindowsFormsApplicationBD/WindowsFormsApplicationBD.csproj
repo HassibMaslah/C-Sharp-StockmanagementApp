@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{836D3BA3-2FF4-40B1-82A0-CEEB12DE2610}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplicationBD</RootNamespace>
+    <AssemblyName>WindowsFormsApplicationBD</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BDstockDataSet.cs">
+      <DependentUpon>BDstockDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BDstockDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDstockDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAfficheFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAfficheFacture.Designer.cs">
+      <DependentUpon>frmAfficheFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjoutClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjoutClient.Designer.cs">
+      <DependentUpon>frmAjoutClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjoutFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjoutFacture.Designer.cs">
+      <DependentUpon>frmAjoutFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjoutFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjoutFournisseur.Designer.cs">
+      <DependentUpon>frmAjoutFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjoutProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjoutProduit.Designer.cs">
+      <DependentUpon>frmAjoutProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjtFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjtFournisseur.Designer.cs">
+      <DependentUpon>frmAjtFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindProduit.Designer.cs">
+      <DependentUpon>frmFindProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListeClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListeClient.Designer.cs">
+      <DependentUpon>frmListeClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListeFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListeFacture.Designer.cs">
+      <DependentUpon>frmListeFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListeFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListeFournisseur.Designer.cs">
+      <DependentUpon>frmListeFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListeProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListeProduit.Designer.cs">
+      <DependentUpon>frmListeProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAfficheFacture.resx">
+      <DependentUpon>frmAfficheFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAjoutClient.resx">
+      <DependentUpon>frmAjoutClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAjoutFacture.resx">
+      <DependentUpon>frmAjoutFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAjoutFournisseur.resx">
+      <DependentUpon>frmAjoutFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAjoutProduit.resx">
+      <DependentUpon>frmAjoutProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAjtFournisseur.resx">
+      <DependentUpon>frmAjtFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFindProduit.resx">
+      <DependentUpon>frmFindProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListeClient.resx">
+      <DependentUpon>frmListeClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListeFacture.resx">
+      <DependentUpon>frmListeFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListeFournisseur.resx">
+      <DependentUpon>frmListeFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListeProduit.resx">
+      <DependentUpon>frmListeProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="BDstockDataSet.xsc">
+      <DependentUpon>BDstockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BDstockDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDstockDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDstockDataSet.xss">
+      <DependentUpon>BDstockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_4559532-stock-illustration-computer-hardware-icons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28deb599aede47c857d2038c0d2519ae-smartphones-and-devices-3d-icon-set.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ebiene-E-Commerce-Cash-register.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Scrap-Client.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-Land-Vista-People-Office-Client-Male-Light.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-Land-Transport-Lorry.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untergunter-Leaf-Mimes-Package-x-generic.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Babasse-Old-School-Recherche.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Designcontest-Ecommerce-Business-Notes.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atopsy-Iwork-Pages.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lorry_Green_icon-icons.com_54887.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajout-panier.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
